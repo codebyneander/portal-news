@@ -1,0 +1,44 @@
+/* Primeiro, resete as margens e preenchimentos de todos os elementos para garantir uma base consistente em todos os navegadores. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+:root {
+  /* Variaveis Globais de Cores */
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+  --text-color-primary: #F1F5F9;
+  --text-color-secondary: #CBD5E1;
+
+  /* Variaveis Globais de Fontes */
+  --font-family: 'Archivo', sans-serif;
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --text-span: 600 14px/145% var(--font-family);
+  --text: 400 16px/140% var(--font-family);
+  --text-sm: 400 14px/160% var(--font-family);
+}
+
+body {
+  font: var(--text); /* Aplica a fonte padrão definida na variável --text */
+  background-color: var(--bg-color); /* Puxa a cor de fundo definida */
+  color: var(--text-color-primary); /* Puxa a cor da fonte primária */
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: inherit; /* Herda a cor do elemento pai */
+}
+
+a:hover {
+  color: var(--brand-color-light); /* Define a cor do link ao passar o mouse */
+}
+
+h1, h2, h3 {
+  font: inherit; /* Herda a fonte definida no body */
+}
