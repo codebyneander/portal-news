@@ -49,12 +49,11 @@ h1, h2, h3 {
   margin-inline: auto; /* Centraliza o container horizontalmente */
 }
 
-/* Utility classes */
-
-.grid {
-  display: grid; /* Define o layout como grid */
+img {
+  max-width: 100%; /* Garante que as imagens não excedam a largura do container */
 }
 
-.grid-flow-col {
-  grid-auto-flow: column; /* Define o fluxo automático do grid para colunas */
+main {
+  margin-top: 40px; /* Adiciona uma margem superior ao main */
+  
 }

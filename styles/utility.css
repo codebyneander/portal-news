@@ -1,0 +1,17 @@
+/* Utility classes */
+
+.grid {
+  display: grid; /* Define o layout como grid */
+}
+
+.grid-flow-col {
+  grid-auto-flow: column; /* Define o fluxo automático do grid para colunas */
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr; /* Define duas colunas de igual largura */
+}
+
+.gap-16 {
+  gap: 16px; /* Define um espaçamento de 16px entre os itens do grid */
+}
