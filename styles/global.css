@@ -42,3 +42,19 @@ a:hover {
 h1, h2, h3 {
   font: inherit; /* Herda a fonte definida no body */
 }
+
+.container {
+  max-width: 1200px; /* Define uma largura máxima para o container */
+  padding-inline: 32px; /* Adiciona preenchimento horizontal */
+  margin-inline: auto; /* Centraliza o container horizontalmente */
+}
+
+/* Utility classes */
+
+.grid {
+  display: grid; /* Define o layout como grid */
+}
+
+.grid-flow-col {
+  grid-auto-flow: column; /* Define o fluxo automático do grid para colunas */
+}
