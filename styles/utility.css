@@ -16,6 +16,10 @@
   gap: 16px; /* Define um espaçamento de 16px entre os itens do grid */
 }
 
+.gap-32 {
+  gap: 32px; /* Define um espaçamento de 32px entre os itens do grid */
+}
+
 .text-2xl {
   font: var(--h1);
 }
