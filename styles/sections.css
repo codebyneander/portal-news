@@ -1,3 +1,26 @@
+
+section header {
+  border-top: 1px solid var(--stroke-color); /* Adiciona uma borda superior ao header da seção */
+  padding-block: 12px 24px; /* Adiciona preenchimento vertical ao header da seção */
+  font: var(--text-span); /* Aplica a fonte definida para span */
+
+  a {
+    justify-self: end;
+    align-items: center; /* Alinha os itens do link verticalmente ao centro */
+    gap: 8px; /* Adiciona um espaçamento de 8px entre os itens do link */
+
+    span {
+      background-image: url(../assets/icons/ArrowRight.svg); /* Define a imagem de fundo do span */
+      height: 16px; /* Define uma altura fixa para o span */
+      width: 16px; /* Define uma largura fixa para o span */
+    }
+
+    &:hover span {
+      background-image: url(../assets/icons/ArrowRight-hover.svg); /* Altera a imagem de fundo do span ao passar o mouse */
+    }
+  }
+}
+
 #featured {
   img {
     height: 100%; /* Garante que a imagem ocupe toda a altura do card */
@@ -37,6 +60,32 @@
       h2 {
         margin-top: 8px; /* Adiciona uma margem superior de 8px */
       }
+    }
+  }
+}
+
+#weekly {
+  
+  &>div {
+    grid-template-columns: repeat(4, 292px); /* Define quatro colunas de igual largura */
+  }
+
+  img {
+    height: 160px; /* Define uma altura fixa para as imagens */
+  }
+
+  figure {
+    position: relative; /* Posiciona o elemento de forma relativa para que o pseudo-elemento possa ser posicionado em relação a ele */
+
+    .content-tag {
+      position: absolute; /* Posiciona o tag de forma absoluta em relação ao seu pai */
+      top: 8px; /* Posiciona o tag a 8px do topo */
+      left: 8px; /* Posiciona o tag a 8px da esquerda */
+    }
+
+    p {
+      margin-top: 8px; /* Adiciona uma margem superior de 8px */
+      font-weight: 800px; /* Define o peso da fonte como 800 */
     }
   }
 }

@@ -55,6 +55,7 @@ img {
 
 main {
   margin-top: 40px; /* Adiciona uma margem superior ao main */
+  gap: 80px; /* Define um espaçamento de 80px entre os itens dentro do main */
 }
 
 .content-tag {
