@@ -1,6 +1,6 @@
 #featured {
   img {
-    height: 100%;
+    height: 100%; /* Garante que a imagem ocupe toda a altura do card */
     object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
     
   }
@@ -22,6 +22,17 @@
         transparent 0%,
         #020617 100%
       ); 
+    }
+
+    figcaption {
+      position: absolute; /* Posiciona a legenda de forma absoluta em relação ao seu pai */
+      bottom: 0; /* Posiciona a legenda na parte inferior do card */
+
+      padding: 24px; /* Adiciona um espaçamento interno de 24px */
+
+      h2 {
+        margin-top: 8px; /* Adiciona uma margem superior de 8px */
+      }
     }
   }
 }

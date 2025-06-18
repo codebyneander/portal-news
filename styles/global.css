@@ -55,5 +55,16 @@ img {
 
 main {
   margin-top: 40px; /* Adiciona uma margem superior ao main */
-  
+}
+
+.content-tag {
+  display: inline-block; /* Exibe o elemento como um bloco em linha */
+  background-color: var(--brand-color-dark); /* Define a cor de fundo do tag */
+  padding: 4px 8px; /* Adiciona preenchimento interno */
+  border-radius: 4px; /* Arredonda os cantos do tag */
+  font: 500 10px/1.2 var(--font-family); /* Define a fonte do tag */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas */ 
+  letter-spacing: 0.04em; /* Adiciona espaçamento entre as letras */
+  color: var(--text-color-primary); /* Define a cor do texto do tag */
+  box-shadow: 0px 4px 16px 0px rgba(2, 6, 23, 0.251); /* Adiciona uma sombra ao redor do tag */
 }
