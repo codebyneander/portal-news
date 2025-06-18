@@ -30,6 +30,10 @@
 
       padding: 24px; /* Adiciona um espaçamento interno de 24px */
 
+      &:has(.text-lg) {
+        padding: 12px; /* Se o card tiver um elemento com a classe text-lg, aplica um padding de 12px */
+      }
+
       h2 {
         margin-top: 8px; /* Adiciona uma margem superior de 8px */
       }
