@@ -22,6 +22,7 @@ section header {
 }
 
 #featured {
+  grid-area: featured; /* Define a área do grid para o destaque */
   img {
     height: 100%; /* Garante que a imagem ocupe toda a altura do card */
     object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
@@ -65,9 +66,10 @@ section header {
 }
 
 #weekly {
-  
+  grid-area: weekly; /* Define a área do grid para a seção semanal */
+
   &>div {
-    grid-template-columns: repeat(4, 292px); /* Define quatro colunas de igual largura */
+    grid-template-columns: repeat(4, 1fr); /* Define quatro colunas de igual largura */
   }
 
   img {
@@ -87,5 +89,38 @@ section header {
       margin-top: 8px; /* Adiciona uma margem superior de 8px */
       font-weight: 800; /* Define o peso da fonte como 800 */
     }
+  }
+}
+
+#ai {
+  grid-area: ai; /* Define a área do grid para a seção de IA */
+
+  img {
+    width: 176px; /* Define uma largura fixa para as imagens */
+    aspect-ratio: 1 / 1; /* Define uma proporção de aspecto de 1:1 para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
+  }
+
+  h3 {
+    margin-block: 8px 4px; /* Adiciona uma margem vertical de 8px no topo e 4px na parte inferior */
+  }
+}
+
+aside {
+  grid-area: aside; /* Define a área do grid para o aside */
+}
+
+#more {
+
+  margin-top: 32px; /* Adiciona uma margem superior de 32px */
+
+  h3 {
+    margin-top: 8px; /* Adiciona uma margem superior de 8px */
+  }
+
+  img {
+    width: 72px; /* Define uma largura fixa para as imagens */
+    aspect-ratio: 1 / 1; /* Define uma proporção de aspecto de 1:1 para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
   }
 }

@@ -54,8 +54,16 @@ img {
 }
 
 main {
-  margin-top: 40px; /* Adiciona uma margem superior ao main */
-  gap: 80px; /* Define um espaçamento de 80px entre os itens dentro do main */
+  margin-block: 40px; /* Adiciona uma margem ao main */
+  row-gap: 80px; /* Define um espaçamento entre as linhas do grid */
+  column-gap: 32px; /* Define um espaçamento entre as colunas do grid */
+
+  grid-template-columns: 2fr 1.5fr; /* Define duas colunas, a primeira com 2/3 da largura e a segunda com 1/3 */
+
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 
 .content-tag {
